@@ -71,7 +71,6 @@ jobs:
         os:
           - ubuntu-latest
           - macos-13
-          - windows-latest
     steps:
       - uses: actions/checkout@v4
       
@@ -698,7 +697,6 @@ jobs:
         os:
           - macos-13
           - ubuntu-latest
-          - windows-latest
         artifact-name:
           - armv7-generic
           - aarch64-generic
@@ -794,8 +792,6 @@ jobs:
             gen-snapshot-name: 'gen_snapshot'
           - os: ubuntu-latest
             gen-snapshot-name: 'gen_snapshot'
-          - os: windows-latest
-            gen-snapshot-name: 'gen_snapshot.exe'
     steps:
       - uses: actions/checkout@v4
       
@@ -921,7 +917,6 @@ jobs:
         os:
           - Linux
           - macOS
-          - Windows
         artifact-name:
           # - pi3
           - pi3-64
