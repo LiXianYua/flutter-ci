@@ -80,6 +80,11 @@ jobs:
           path: engine
           key: engine-${{ needs.resolve-version.outputs.engine-hash }}-${{ runner.os }}-${{ runner.arch }}
           lookup-only: true
+          
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       
       - name: Install depot tools
         id: cache-depot-tools
