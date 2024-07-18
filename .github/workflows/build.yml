@@ -697,6 +697,7 @@ jobs:
         os:
           - macos-13
           - ubuntu-latest
+        python-version: ["3.11.9"]
         artifact-name:
           - armv7-generic
           - aarch64-generic
